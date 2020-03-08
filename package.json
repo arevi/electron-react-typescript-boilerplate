@@ -6,13 +6,23 @@
   "scripts": {
     "webpack-dev": "webpack --mode development",
     "react-dev": "webpack-dev-server --mode development --port 3000",
-    "electron-dev": "cross-env ELECTRON_ENV=dev electron ./build/app.js"
+    "electron-dev": "cross-env ELECTRON_ENV=dev electron ./build/app.js",
+    "webpack-prod": "webpack --mode production",
+    "build-win": "electron-builder build --win -c.extraMetadata.main=./build/app.js --publish never"
   },
   "author": "Arevi",
   "license": "ISC",
   "repository": {
     "type": "git",
     "url": "https://github.com/arevi/electron-react-typescript-boilerplate"
+  },
+  "build": {
+    "appId": "com.arevi.electron-react-typescript-boilerplate",
+    "files": [
+      "build/*",
+      "node_modules/**/*"
+    ],
+    "productName": "Electron React TypeScript Boilerplate"
   },
   "devDependencies": {
     "@types/html-webpack-plugin": "^3.2.2",
