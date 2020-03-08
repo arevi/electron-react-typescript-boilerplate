@@ -37,11 +37,15 @@ const config: webpack.Configuration[] = [
         {
           test: /\.css$/,
           loaders: ['style-loader', 'css-loader']
+        },
+        {
+          test: /\.(png|svg|jpg|gif)$/,
+          use: ['file-loader']
         }
       ]
     },
     resolve: {
-      extensions: ['*', '.js', '.jsx', '.ts', '.tsx', '.css', '.json']
+      extensions: ['*', '.js', '.jsx', '.ts', '.tsx', '.css', '.json', '.svg']
     },
     output: {
       path: __dirname + '/build',
@@ -50,8 +54,7 @@ const config: webpack.Configuration[] = [
     },
     devServer: {
       contentBase: __dirname + '/build/',
-      compress: true,
-      port: 3000
+      compress: true
     },
     plugins: [
       new HtmlWebPackPlugin({
