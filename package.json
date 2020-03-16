@@ -10,8 +10,8 @@
     "webpack-prod": "webpack --mode production",
     "build-win": "electron-builder build --win -c.extraMetadata.main=./build/app.js --publish never"
   },
-  "author": "Arevi",
-  "license": "ISC",
+  "author": "Armin Dizdarevic",
+  "license": "MIT",
   "repository": {
     "type": "git",
     "url": "https://github.com/arevi/electron-react-typescript-boilerplate"
