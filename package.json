@@ -39,7 +39,7 @@
     "html-webpack-plugin": "^4.2.0",
     "prop-types": "^15.7.2",
     "style-loader": "^1.1.4",
-    "ts-loader": "^7.0.1",
+    "ts-loader": "^7.0.5",
     "ts-node": "^8.9.0",
     "tslint": "^6.1.1",
     "typescript": "^3.8.3",
