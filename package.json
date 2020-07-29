@@ -33,7 +33,7 @@
     "@types/webpack-dev-server": "^3.10.1",
     "cross-env": "^7.0.2",
     "css-loader": "^3.5.3",
-    "electron": "^9.0.3",
+    "electron": "^9.1.2",
     "electron-builder": "^22.7.0",
     "file-loader": "^6.0.0",
     "html-webpack-plugin": "^4.3.0",
